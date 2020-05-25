@@ -12,28 +12,37 @@
 
 ## 可以使用浏览器或者postman来查看
 1. 接受get请求, 比如:
-  ```
-  localhost:3000/api/user/list
-  ```
+    ```
+    localhost:3000/api/user/list
+    ```
   需要配置在./routers/api.config.js以及./routes/api文件下
+
 2. 接受post请求, 比如:
-  ```
-  http://localhost:3000/api/login/auth
-  ```
+    ```
+    http://localhost:3000/api/login/auth
+    ```
   配置同上
+
 3. 返回图片, 可以指定图片大小, 字体颜色, 背景色, 图片文案
-  ```
-  http://localhost:3000/image?text=卧槽&width=237&height=222&color=00ff00&bgColor=0f0f0f
-  ```
+    ```
+    http://localhost:3000/image?text=卧槽&width=237&height=222&color=00ff00&bgColor=0f0f0f
+    ```
+
 4. 返回页面
-  ```
-  http://localhost:3000/
-  ```
+    ```
+    http://localhost:3000/
+    ```
+
 5. 返回静态服务文件内容, 可以在/public文件夹下配置
-  ```
-  http://localhost:3000/static/images/testImges.jpg
-  ```
+    ```
+    http://localhost:3000/static/images/testImges.jpg
+    ```
+
 6. 返回文件
-  ```
-  localhost:3000/file/
-  ```
+    ```
+    localhost:3000/file/
+    ```
+
+## TODO:
+  1. 优化项目结构
+  2. 优化api的校验和配置
